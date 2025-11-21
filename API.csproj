@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Remove="API_SIMPLIFICADA\**" />
+    <Content Remove="API_SIMPLIFICADA\**" />
+    <EmbeddedResource Remove="API_SIMPLIFICADA\**" />
+    <None Remove="API_SIMPLIFICADA\**" />
+  </ItemGroup>
+
+</Project>
+
