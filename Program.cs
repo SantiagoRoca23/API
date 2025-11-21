@@ -25,15 +25,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-// Railway usa HTTP, no HTTPS en producción
-if (!app.Environment.IsDevelopment())
-{
-    app.UseHttpsRedirection();
-}
-else
-{
-    app.UseHttpsRedirection();
-}
+app.UseHttpsRedirection();
 
 app.UseCors("AllowAll");
 app.UseAuthorization();

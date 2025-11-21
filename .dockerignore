@@ -6,3 +6,6 @@ obj/
 *.cache
 Properties/launchSettings.json
 API_SIMPLIFICADA/
+.git/
+.gitignore
+
